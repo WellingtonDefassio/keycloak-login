@@ -5,6 +5,7 @@
     <link rel="icon" href="${url.resourcesPath}/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="${url.resourcesPath}/css/login.css">
     <link rel="stylesheet" href="${url.resourcesPath}/css/locale.css">
+    <link rel="stylesheet" href="${url.resourcesPath}/css/background.css">
 </head>
 <body>
     <div class="login-container">

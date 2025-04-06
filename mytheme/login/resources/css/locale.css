@@ -13,7 +13,7 @@
 }
 
 #kc-current-locale-link {
-    color: #666;
+    color: white;
     text-decoration: none;
     cursor: pointer;
     padding: 5px 10px;
@@ -49,6 +49,7 @@
 
 .locale-options li a:hover {
     background-color: #f0f0f0;
+    border-radius: 6px;
 }
 
 .locale-dropdown:hover .locale-options {
