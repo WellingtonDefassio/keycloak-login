@@ -52,6 +52,10 @@ button:hover {
     background: #003d99;
 }
 
+.footer a:hover {
+    text-decoration: underline;
+}
+
 .footer {
     margin-top: 20px;
 }
@@ -61,4 +65,26 @@ button:hover {
     margin-top: 10px;
     color: #0052cc;
     text-decoration: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0052cc;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 82, 204, 0.2);
+}
+input[type="text"],
+input[type="password"],
+button {
+    font-size: 15px;
+}
+
+@media (max-width: 420px) {
+    .login-card {
+        padding: 20px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
 }
