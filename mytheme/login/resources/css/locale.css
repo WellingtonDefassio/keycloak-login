@@ -1,0 +1,55 @@
+/* locale.css */
+
+.locale-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#kc-current-locale-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+#kc-current-locale-link:hover {
+    border-color: #ccc;
+}
+
+.locale-options {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    margin-top: 5px;
+    z-index: 9999;
+    list-style: none;
+    padding: 0;
+}
+
+.locale-options li a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.locale-options li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+}
+
+.locale-dropdown:hover .locale-options {
+    display: block;
+}
+
+.locale-selector {
+    position: relative;
+    font-size: 14px;
+}
