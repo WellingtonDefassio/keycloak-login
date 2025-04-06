@@ -10,13 +10,18 @@
     <div class="login-container">
         <div class="login-card">
             <#if realm.internationalizationEnabled && locale.supported?size gt 1>
+                 <#assign localeLabels = {
+                     "pt-BR": "Português",
+                     "en": "English",
+                     "es": "Español"
+                 }>
                 <div class="locale-selector">
                     <div class="locale-dropdown">
                         <a href="#" id="kc-current-locale-link">${locale.current}</a>
                         <ul class="locale-options">
                             <#list locale.supported as l>
-                                <li><a href="${l.url}">${l.label}</a></li>
-                                <a href="${msg("linkSolucoes")}" target="_blank">${msg("solucoes")}</a>
+                                <#assign langCode = l.url?keep_after("kc_locale=")>
+                                <li><a href="${l.url}">${localeLabels[langCode]!l.label}</a></li>
                             </#list>
                         </ul>
                     </div>
@@ -28,7 +33,7 @@
                        value="${(login.username!'')}" autofocus required>
                 <input type="password" id="password" name="password" placeholder="Senha" required>
 
-                <button type="submit">Entrar</button>
+                <button type="submit">${msg("doLogIn")}</button>
             </form>
 
             <div class="footer">
