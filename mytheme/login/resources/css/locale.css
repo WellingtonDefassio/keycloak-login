@@ -1,12 +1,5 @@
 /* locale.css */
 
-.locale-selector {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 14px;
-}
-
 .locale-dropdown {
     position: relative;
     display: inline-block;
@@ -34,7 +27,7 @@
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     border-radius: 6px;
     margin-top: 5px;
-    z-index: 1000;
+    z-index: 9999;
     list-style: none;
     padding: 0;
 }
@@ -54,4 +47,9 @@
 
 .locale-dropdown:hover .locale-options {
     display: block;
+}
+
+.locale-selector {
+    position: relative;
+    font-size: 14px;
 }

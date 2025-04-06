@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="${url.resourcesPath}/css/background.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-card">
+    <div class="header-bar">
+        <div class="header-content">
+            <a href="https://www.platformscience.com/" target="_blank">
+                <img src="${url.resourcesPath}/img/logo-top.png" alt="Logo" class="header-logo">
+            </a>
             <#if realm.internationalizationEnabled && locale.supported?size gt 1>
-                 <#assign localeLabels = {
-                     "pt-BR": "Português",
-                     "en": "English",
-                     "es": "Español"
-                 }>
+                <#assign localeLabels = {
+                    "pt-BR": "Português",
+                    "en": "English",
+                    "es": "Español"
+                }>
                 <div class="locale-selector">
                     <div class="locale-dropdown">
                         <a href="#" id="kc-current-locale-link">${locale.current}</a>
@@ -28,7 +31,11 @@
                     </div>
                 </div>
             </#if>
-            <img src="${url.resourcesPath}/img/logo.png" alt="Logo" class="logo">
+        </div>
+    </div>
+    <div class="login-container">
+        <div class="login-card">
+            <img src="${url.resourcesPath}/img/logo-login.png" alt="Logo" class="logo">
             <form id="kc-form-login" action="${url.loginAction}" method="post">
                 <label for="username">${msg("usernameOrEmail")}</label>
                 <input type="text" id="username" name="username"
