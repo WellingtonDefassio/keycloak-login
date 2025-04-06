@@ -29,10 +29,11 @@
             </#if>
             <img src="${url.resourcesPath}/img/logo.png" alt="Logo" class="logo">
             <form id="kc-form-login" action="${url.loginAction}" method="post">
-                <input type="text" id="username" name="username" placeholder="Usuário ou Email"
+                <label for="username">${msg("usernameOrEmail")}</label>
+                <input type="text" id="username" name="username"
                        value="${(login.username!'')}" autofocus required>
-                <input type="password" id="password" name="password" placeholder="Senha" required>
-
+                <label for="password">${msg("password")}</label>
+                <input type="password" id="password" name="password" required>
                 <button type="submit">${msg("doLogIn")}</button>
             </form>
 

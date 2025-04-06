@@ -88,3 +88,12 @@ button {
         max-width: 120px;
     }
 }
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #555;
+    font-size: 13px;
+}
