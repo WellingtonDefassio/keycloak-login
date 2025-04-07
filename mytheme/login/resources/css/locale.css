@@ -53,11 +53,3 @@
     position: relative;
     font-size: 14px;
 }
-
-@media (max-width: 600px) {
-    .locale-options {
-        right: auto;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}

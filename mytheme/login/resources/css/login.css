@@ -1,9 +1,9 @@
 .login-container {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
+    min-height: calc(100vh - 60px);
     box-sizing: border-box;
 }
 
@@ -99,49 +99,4 @@ label {
 .header-logo {
     max-height: 40px;
     display: block;
-}
-
-@media (max-width: 420px) {
-    .login-card {
-        padding: 20px 15px;
-    }
-
-    input[type="text"],
-    input[type="password"],
-    button {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    label {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 600px) {
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .header-logo {
-        max-height: 30px;
-    }
-
-    .locale-selector {
-        position: static;
-    }
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
