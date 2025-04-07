@@ -72,16 +72,6 @@ button {
     font-size: 15px;
 }
 
-@media (max-width: 420px) {
-    .login-card {
-        padding: 20px;
-    }
-
-    .logo {
-        max-width: 120px;
-    }
-}
-
 label {
     display: block;
     text-align: left;
@@ -109,4 +99,37 @@ label {
 .header-logo {
     max-height: 40px;
     display: block;
+}
+
+@media (max-width: 420px) {
+    .login-card {
+        padding: 20px 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-logo {
+        max-height: 30px;
+    }
+
+    .locale-selector {
+        position: static;
+    }
 }
