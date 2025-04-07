@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ${realm.name}</title>
     <link rel="icon" href="${url.resourcesPath}/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="${url.resourcesPath}/css/login.css">
